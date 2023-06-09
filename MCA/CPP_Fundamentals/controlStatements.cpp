@@ -53,14 +53,33 @@ int main(){
     //     cout << i << endl;
     // }
 
+
+    // for(int i = 1; i <= 3; i++){
+    //     for(int j = 1; j <= 3; j++){
+    //         cout << i << " " << j << endl;
+    //     }
+    // }
+
     //-----------------while loop
-    int i = 0;
+    // int i = 0;
 
-    while(i <= 10){
+    // while(i <= 10){
+    //     cout << i << endl;
+    //     i += 2;
+    // }
+
+    for(int i = 0; i <= 10; i++){
+
+        if(i == 4)
+        {
+            continue;
+        }
+        if(i == 8)
+        {
+            break;
+        }
         cout << i << endl;
-        i += 2;
     }
-
 
 }
 
@@ -76,3 +95,14 @@ int main(){
 //if mark are 20 << cout that student need improvement
 //If marks are 30 << cout that student has passed
 //for any other input << cout invalid marks
+
+//using while loop print
+// 1 1
+// 1 2
+// 1 3
+// 2 1
+// 2 2
+// 2 3
+// 3 1
+// 3 2
+// 3 3
