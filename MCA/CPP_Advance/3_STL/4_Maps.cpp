@@ -65,8 +65,6 @@ You are given an array of integers. Your task is to find the count of each uniqu
 int arr[] = {4, 2, 5, 2, 8, 4, 2, 5, 4, 8, 9};
 */
 
-
-
 /*
 You are given a list of student names and their corresponding scores in an exam. Your task is to determine the top-performing student(s) based on their scores.
 
