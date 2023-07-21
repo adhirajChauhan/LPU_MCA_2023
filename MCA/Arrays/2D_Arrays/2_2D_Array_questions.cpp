@@ -43,8 +43,23 @@ int rowSum(int arr[][4], int row, int col){
     return row;
 }
 
+void wavePrint(int arr[][4], int r, int c){
+    for(int col = 0; col < 4; col++){
+        if(col % 2 == 1){ //traversing on odd column
+            for(int row = r - 1; row >= 0; row--){
+                cout << arr[row][col] << " ";
+            }
+        }
+        else{
+            for(int row = 0; row < 3; row++){
+                cout << arr[row][col] << " ";
+            }
+        }
+    }
+}
+
 int main(){
-    int arr[3][4] = {100,2,3,4,5,6,7,8,9,10,11,12};
+    int arr[3][4] = {1,2,3,4,5,6,7,8,9,10,11,12};
 
     for(int row = 0; row < 3; row++){
         for(int col = 0; col < 4; col++){
@@ -66,4 +81,7 @@ int main(){
     printSum(arr,3,4);
 
     cout << rowSum(arr, 3, 4) << endl;
+
+    cout << "Wave print ";
+    wavePrint(arr,3,4);
 }
